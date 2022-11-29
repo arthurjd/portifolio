@@ -15,7 +15,7 @@
 }
 
 .nav {
-    width: 100%;
+    width: 50%;
     height: 70px;
     background-color: rgb(118, 118, 118);
     display: flex;
@@ -23,6 +23,7 @@
     align-items: center;
     align-content: center;
     padding-left: 20px;
+    float: left;
 }
 
 .navitem {
@@ -34,6 +35,32 @@
     margin: 10px;
     font-size: 20px;
     color: rgb(0, 0, 0);
+    border: 1px;
+    border-radius: 5px;
+    border-style: outset;
+}
+
+.nav2 {
+    width: 50%;
+    height: 70px;
+    background-color: rgb(118, 118, 118);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-content: center;
+    padding-left: 20px;
+}
+
+#botaometamask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(118, 118, 118);
     border: 1px;
     border-radius: 5px;
     border-style: outset;
