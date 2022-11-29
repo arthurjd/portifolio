@@ -25,6 +25,7 @@
 }
 
 .apresentacao {
+    border-radius: 10px;
     background-color: rgb(118, 118, 118);
     float: left;
 }
