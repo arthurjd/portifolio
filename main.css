@@ -25,16 +25,21 @@
 }
 
 .apresentacao {
-    background-color: rgba(240, 248, 255, 0);
+    background-color: rgb(118, 118, 118);
     float: left;
 }
 
 .titulo {
+    margin: 20px;
     font-size: 50px;
-    padding-bottom: 10px;
+}
+
+.titulo2 {
+        margin: 0 20px;
 }
 
 .paragrafo {
+    margin: 10px 20px 20px;
     text-align: justify;
     font-family: Garamond, serif;
 }
