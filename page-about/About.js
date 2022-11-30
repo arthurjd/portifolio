@@ -93,3 +93,17 @@ ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
 async function getAccount() {
     accounts = await ethereum.request({ method: 'eth_requestAccounts' }); //nao tenho ideia do que é isso, só copiei da metamask
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

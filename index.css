@@ -78,13 +78,40 @@
     cursor: pointer;
 }
 
+.anuncios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .paragrafo {
     margin: 10px 20px 20px;
     text-align: justify;
     font-family: Garamond, serif;
 }
 
+.anuncio-texto {
+    text-align: justify;
+    font-family: Garamond, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.bloco-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 750px;
+    height: 100px;
+    margin: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+}
+
 /*------------------Pop-up que aparece ao clicar em "Send me Crypto"-------------------*/
+
 
 #botao-send {
     display: block;
