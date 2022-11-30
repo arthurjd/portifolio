@@ -38,6 +38,7 @@
     border: 1px;
     border-radius: 5px;
     border-style: outset;
+    text-decoration: none;
 }
 
 .nav2 {
@@ -64,6 +65,7 @@
     border: 1px;
     border-radius: 5px;
     border-style: outset;
+    cursor: pointer;
 }
 
 #enviarcripto {
@@ -79,6 +81,7 @@
     border: 1px;
     border-radius: 5px;
     border-style: outset;
+    cursor: pointer;
 }
 
 .coluna1 {
@@ -119,4 +122,55 @@
     height: 70px;
     border-radius: 10px;
     background-color: rgb(118, 118, 118);
+    cursor: pointer;
+}
+
+/*------------------Pop-up que aparece ao clicar em "Send me Crypto"-------------------*/
+
+#botao-send {
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    background: rgb(118, 118, 118);;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+#value-eth {
+    width: 250px;
+    height: 25px;
+}
+
+.popup-fundoescuro {
+    display: none;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    position: relative;
+    border-radius: 10px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
 }
