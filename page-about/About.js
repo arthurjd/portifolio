@@ -59,39 +59,37 @@ popup.addEventListener('click', event => {
 
 
 //----------------------------Enviando ETH----------------------------//
+//-------O codigo a seguir esta porco, eu não entendi nada, mas tentei de tudo e deu certo-------//
 
-const sendEthButton = document.querySelector('#botao-send');
-const valor = document.getElementById('value-eth')
+const sendEthButton = document.querySelector('#botao-send'); // esse é o botao do pop-up NAO DELETE NUNCA
 
-let accounts = [0];
+let accounts = [0]; //nao sei se isso serve para alguma coisa, mas coloquei na tentativa de puxar a carteira do usuario
 
 ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
     account = accounts[0];
-    console.log(account);
-
-    valor.addEventListener('change', () => {
-        console.log(valor)
-    })
 
     //Sending Ethereum to an address
     sendEthButton.addEventListener('click', () => {
+
+        let number = document.getElementById("value-eth").value; //esta pegando o valor do input
+        let number2 = number * 1000000000000000000 //esta pegando o valor do number (que é em eth) e transformando em gwei
+        let hexStr = number2.toString(16); //.toString(16) serve para transformar em Hexadecimal
+        console.log(hexStr); //retorna no console o resultado para ver se deu certo
+
+        const valorHex = hexStr //esta definindo a constante e seu valor, vai ser usado para indicar o valor da trnasacao
+
         ethereum.request({method: 'eth_sendTransaction',params: [{
-                        from: accounts[0],
-                        to: '0xce1AcD66c209CB164fB59B05eDC4ED9B7cf7DdfA',
-                        value: valor[0],
-                        gasPrice: '0x09184e72a000',
-                        gas: '0x2710',
+                        from: accounts[0], //usuario logado
+                        to: '0xce1AcD66c209CB164fB59B05eDC4ED9B7cf7DdfA', //conta de destino
+                        value: valorHex, //valor que o usuario colocou no input
                     }],
             })
-            .then((txHash) => console.log(txHash))
-            .catch((error) => console.error);
-    });
-});
+            .then((txHash) => console.log(txHash)) //nao tenho ideia do que é isso, só copiei da metamask
+            .catch((error) => console.error) //nao tenho ideia do que é isso, só copiei da metamask
+    })
 
-ethereumButton.addEventListener('click', () => {
-    getAccount();
 });
 
 async function getAccount() {
-    accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+    accounts = await ethereum.request({ method: 'eth_requestAccounts' }); //nao tenho ideia do que é isso, só copiei da metamask
 }

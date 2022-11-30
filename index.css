@@ -78,6 +78,11 @@
     cursor: pointer;
 }
 
+.paragrafo {
+    margin: 10px 20px 20px;
+    text-align: justify;
+    font-family: Garamond, serif;
+}
 
 /*------------------Pop-up que aparece ao clicar em "Send me Crypto"-------------------*/
 
