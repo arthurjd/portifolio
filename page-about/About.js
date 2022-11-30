@@ -14,3 +14,13 @@ document.getElementById('botaometamask').addEventListener('click', event => {
         });
     });
 });
+
+/*
+document.getElementById('enviarcripto').addEventListener('click', event => {
+    let transactionParam = {
+        to: '0xce1AcD66c209CB164fB59B05eDC4ED9B7cf7DdfA',
+        from: account,
+        value: AQUI TEM QUE COLOCAR O VALOR EM HEX ENTRE ''
+    };
+});
+*/
