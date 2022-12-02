@@ -192,6 +192,12 @@
 
     #botao {
         width: 100%;
+        font-size: 20px;
+        margin-top: 2.5px;
+        margin-bottom: 2.5px;
+        border-radius: 10px;
+        background-color: rgb(118, 118, 118);
+        cursor: pointer;
     }
 
     #coluna1 {
