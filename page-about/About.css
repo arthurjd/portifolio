@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     margin: 30px;
+    min-width: 280px;
 }
 
 .nav {
@@ -117,13 +118,15 @@
 
 .botao {
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
     width: 150px;
     height: 70px;
     border-radius: 10px;
     background-color: rgb(118, 118, 118);
     cursor: pointer;
 }
+
 
 /*------------------Pop-up que aparece ao clicar em "Send me Crypto"-------------------*/
 
@@ -173,4 +176,32 @@
     top: 5px;
     right: 10px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    #geral {
+        margin: 0px;
+        padding: 2%;
+        float: left;
+        display: table-column;
+    }
+    #perfil {
+        width: 100%;
+    }
+
+    #botao {
+        width: 100%;
+    }
+
+    #coluna1 {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #coluna2 {
+        margin-top: 5px;
+    }
+
 }
