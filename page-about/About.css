@@ -198,6 +198,7 @@
         border-radius: 10px;
         background-color: rgb(118, 118, 118);
         cursor: pointer;
+        text-decoration: none;
     }
 
     #coluna1 {
@@ -208,7 +209,6 @@
 
     #coluna2 {
         margin-top: 5px;
-        text-decoration: none;
     }
 
 }
