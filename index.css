@@ -95,19 +95,18 @@
     font-family: Garamond, serif;
     font-size: 30px;
     font-weight: bold;
+    padding: 15px;
 }
 
 .bloco-texto {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 750px;
-    height: 100px;
-    margin: 50px;
+    margin: auto;
+    margin-top: 10px;
+    height: 70px;
     border-radius: 10px;
     color: white;
-    background-color: red;
+    background-color: red;  
 }
 
 /*------------------Pop-up que aparece ao clicar em "Send me Crypto"-------------------*/
@@ -160,4 +159,44 @@
     top: 5px;
     right: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #navtopico {
+        float: left;
+        display: table-column;
+        margin: 0px;
+    }
+        
+    #nav {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        justify-content: center;
+        height: 50px;
+    }
+        
+    #nav2 {
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    #mainbloco {
+        max-width: max-content;
+    }
+
+    #anuncios {
+        padding: 20px;
+        display: table-column;
+        float: left;
+        width: 100%;
+    }
+
+    #bloco-texto {
+        justify-content: center;
+        border-radius: 10px;
+        color: white;
+        background-color: red;
+    }
 }
