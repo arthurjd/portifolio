@@ -1,3 +1,5 @@
+/*------------------CSS DA PÁGINA TODA-------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,23 +11,20 @@
 }
 
 .nav {
-    width: 50%;
-    height: 70px;
     background-color: rgb(118, 118, 118);
     display: flex;
-    justify-content: left;
     align-items: center;
     align-content: center;
-    padding-left: 20px;
     float: left;
+    height: 70px;
 }
 
 .navitem {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 40px;
+    width: fit-content;
+    padding: 5px;
     margin: 10px;
     font-size: 20px;
     color: rgb(0, 0, 0);
@@ -36,7 +35,6 @@
 }
 
 .nav2 {
-    width: 50%;
     height: 70px;
     background-color: rgb(118, 118, 118);
     display: flex;
@@ -51,14 +49,13 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    height: 40px;
     margin: 10px;
     font-size: 20px;
     color: rgb(0, 0, 0);
     background-color: rgb(118, 118, 118);
     border: 1px;
     border-radius: 5px;
-    border-style: outset;
+    border-style: solid;
     cursor: pointer;
 }
 
@@ -66,15 +63,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 40px;
+    padding: 5px;
     margin: 10px;
+    max-height: 70px;
     font-size: 20px;
     color: rgb(0, 0, 0);
+    background-color: rgb(118, 118, 118);
     border: 1px;
     border-radius: 5px;
-    border-style: outset;
-    text-decoration: none;
+    border-style: solid;
+    cursor: pointer;
 }
 
 .anuncios {
@@ -108,8 +106,10 @@
     background-color: red;  
 }
 
-/*------------------Pop-up que aparece ao clicar em "Send me Crypto"-------------------*/
+/*------------------------------FIM DO CSS DA PÁGINA TODA------------------------------*/
 
+
+/*------------------POP-UP QUE APARECE AO CLICAR EM "Send me Crypto"-------------------*/
 
 #botao-send {
     display: block;
@@ -160,14 +160,20 @@
     cursor: pointer;
 }
 
+/*------------------FIM DO POP-UP-------------------*/
+
+
+/*------------------RESPONSIVIDADE-------------------*/
+
 @media screen and (max-width: 600px) {
     #navtopico {
         float: left;
         display: table-column;
         margin: 0px;
+        padding: 0px;
     }
         
-  /*  #nav {
+    #nav {
         padding: 0px;
         margin: 0px;
         width: 100%;
@@ -180,7 +186,12 @@
         justify-content: center;
         padding: 0px;
     }
-  */  
+
+    #enviarcripto {
+        padding: 5px;
+        margin: 10px;
+    }
+
     #mainbloco {
         max-width: max-content;
     }
@@ -199,3 +210,5 @@
         background-color: red;
     }
 }
+
+/*------------------FIM DA RESPONSIVIDADE-------------------*/

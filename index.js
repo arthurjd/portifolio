@@ -1,4 +1,4 @@
-//---------Conectar Carteira; Pegar Info-Conta; Pegar Info-Saldo;---------//
+/*---------Conectar Carteira; Pegar Info-Conta; Pegar Info-Saldo;---------*/
 
 document.getElementById('botaometamask').addEventListener('click', event => {
     let account;
@@ -18,15 +18,13 @@ document.getElementById('botaometamask').addEventListener('click', event => {
     });
 });
 
+/*---------FIM do: Conectar Carteira; Pegar Info-Conta; Pegar Info-Saldo;---------*/
 
 
 
 
 
-
-
-
-//----------------------------Popup JavaScript----------------------------//
+/*----------------------------Popup JavaScript----------------------------*/
 
 const popupAparecerBotao = document.querySelector('#enviarcripto')
 const popup = document.querySelector('.popup-fundoescuro')
@@ -45,20 +43,13 @@ popup.addEventListener('click', event => {
     }
 });
 
+/*-----------------------------FIM DO POP-UP JavaScript-----------------------------*/
 
 
 
 
 
-
-
-
-
-
-
-
-
-//----------------------------Enviando ETH----------------------------//
+/*-----------------------------------Enviando ETH-----------------------------------*/
 //-------O codigo a seguir esta porco, eu não entendi nada, mas tentei de tudo e deu certo-------//
 
 const sendEthButton = document.querySelector('#botao-send'); // esse é o botao do pop-up NAO DELETE NUNCA
@@ -94,3 +85,5 @@ ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
 async function getAccount() {
     accounts = await ethereum.request({ method: 'eth_requestAccounts' }); //nao tenho ideia do que é isso, só copiei da metamask
 }
+
+/*----------------------------FIM DO Enviando ETH----------------------------*/

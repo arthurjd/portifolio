@@ -1,3 +1,5 @@
+/*------------------CSS DA PÁGINA TODA-------------------*/
+
 *{
     margin: 0;
     padding: 0;
@@ -15,24 +17,12 @@
     min-width: 280px;
 }
 
-.nav {
-    width: 30%;
-    height: 70px;
-    background-color: rgb(118, 118, 118);
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    align-content: center;
-    padding-left: 20px;
-    float: left;
-}
-
 .navitem {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 40px;
+    width: fit-content;
+    padding: 5px;
     margin: 10px;
     font-size: 20px;
     color: rgb(0, 0, 0);
@@ -42,8 +32,16 @@
     text-decoration: none;
 }
 
+.nav {
+    background-color: rgb(118, 118, 118);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    float: left;
+    height: 70px;
+}
+
 .nav2 {
-    width: 70%;
     height: 70px;
     background-color: rgb(118, 118, 118);
     display: flex;
@@ -58,14 +56,13 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    height: 40px;
     margin: 10px;
     font-size: 20px;
     color: rgb(0, 0, 0);
     background-color: rgb(118, 118, 118);
     border: 1px;
     border-radius: 5px;
-    border-style: outset;
+    border-style: solid;
     cursor: pointer;
 }
 
@@ -74,14 +71,14 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
-    height: 40px;
     margin: 10px;
+    max-height: 70px;
     font-size: 20px;
     color: rgb(0, 0, 0);
     background-color: rgb(118, 118, 118);
     border: 1px;
     border-radius: 5px;
-    border-style: outset;
+    border-style: solid;
     cursor: pointer;
 }
 
@@ -91,14 +88,25 @@
     float: left;
 }
 
-.perfil {
-    border-radius: 10px;
-}
-
 .coluna2 {
     border-radius: 10px;
     background-color: rgb(118, 118, 118);
     float: left;
+}
+
+.botao {
+    font-size: 20px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: rgb(118, 118, 118);
+    cursor: pointer;
+}
+
+.perfil {
+    border-radius: 10px;
 }
 
 .nome {
@@ -116,19 +124,10 @@
     font-family: Garamond, serif;
 }
 
-.botao {
-    font-size: 20px;
-    margin-top: 2.5px;
-    margin-bottom: 2.5px;
-    width: 150px;
-    height: 70px;
-    border-radius: 10px;
-    background-color: rgb(118, 118, 118);
-    cursor: pointer;
-}
+/*------------------------------FIM DO CSS DA PÁGINA TODA------------------------------*/
 
 
-/*------------------Pop-up que aparece ao clicar em "Send me Crypto"-------------------*/
+/*------------------POP-UP QUE APARECE AO CLICAR EM "Send me Crypto"-------------------*/
 
 #botao-send {
     display: block;
@@ -178,6 +177,10 @@
     cursor: pointer;
 }
 
+/*------------------FIM DO POP-UP-------------------*/
+
+
+/*------------------RESPONSIVIDADE-------------------*/
 
 @media screen and (max-width: 600px) {
     #geral {
@@ -232,4 +235,15 @@
         padding: 0px;
     }
 
+    #navitem {
+        padding: 5px;
+        margin: 5px;
+    }
+        
+    #enviarcripto {
+        padding: 5px;
+        margin: 10px;
+    }
+
 }
+/*------------------FIM DA RESPONSIVIDADE-------------------*/
