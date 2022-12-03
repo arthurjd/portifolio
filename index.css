@@ -172,7 +172,7 @@
 
 /*------------------RESPONSIVIDADE-------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 860px) {
     #navtopico {
         float: left;
         display: table-column;
