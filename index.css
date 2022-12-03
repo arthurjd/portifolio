@@ -26,7 +26,6 @@
 }
 
 .nav {
-    background-color: rgb(118, 118, 118);
     display: flex;
     align-items: center;
     align-content: center;
@@ -36,12 +35,15 @@
 
 .nav2 {
     height: 70px;
-    background-color: rgb(118, 118, 118);
     display: flex;
     justify-content: right;
     align-items: center;
     align-content: center;
     padding-left: 20px;
+}
+
+.geralnav {
+    background-color: rgb(118, 118, 118);
 }
 
 .navtopico {
