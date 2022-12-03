@@ -3,9 +3,9 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name='viewport' content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
     <title>Home | Portifolio</title>
 </head>
@@ -14,40 +14,39 @@
     <header>
         <div class="geralnav">
             <div class="popup-fundoescuro">
-            <div class="popup">
-                <div class="popup-close">x</div>
-                <div class="popup-conteudo">
-                    <p class="paragrafo">Ao clicar em enviar você enviará a moeda principal da rede que você esta conectado para <strong>minha carteira</strong>, atual dono desse site!</p>
-                    <p class="paragrafo">Digite abaixo o valor que deseja enviar!</p>
-                    <input id="value-eth" type="number">
-                    <button id="botao-send">Enviar</button>
-                </div> <!--popup-conteudo-->
-            </div> <!--popup-->
+                <div class="popup">
+                    <div class="popup-close">  
+                        x
+                    </div><!--popup-close-->
+                    <div class="popup-conteudo">
+                        <p class="paragrafo">Ao clicar em enviar você enviará a moeda principal da rede que você esta conectado para <strong>minha carteira</strong>, atual dono desse site!</p>
+                        <p class="paragrafo">Digite abaixo o valor que deseja enviar!</p>
+                        <input id="value-eth" type="number">
+                        <button id="botao-send">Enviar</button>
+                    </div> <!--popup-conteudo-->
+                </div> <!--popup-->
             </div> <!--popup-fundoescuro-->
 
             <div class="navtopico" id="navtopico">
-
-            <div class="nav" id="nav">
-                <a class="navitem" href="index.html">HOME</a>
-                <a class="navitem" href="/page-about/About.html">ABOUT</a>
-                <button id="enviarcripto">Enviar Cripto</button>
-            </div><!--nav-->
-
-            <div class="nav2" id="nav2">
-               <button id="botaometamask">Conecte a sua Metamask</button>
-            </div> <!--nav2-->
-
+                <div class="nav" id="nav">
+                    <a class="navitem" href="index.html">HOME</a>
+                    <a class="navitem" href="/page-about/About.html">ABOUT</a>
+                    <button class="botaoenviarcripto" id="enviarcripto">Enviar Cripto</button>
+                </div><!--nav-->
+                <div class="nav2" id="nav2">
+                    <button id="botaometamask">Conecte a sua Metamask</button>
+                </div><!--nav2-->
             </div><!--navtopico-->
-        </div>
+        </div><!--geralnav-->
     </header>
 
-    <div class="mainbloco">
+    <div class="geral" id="geral">
         <div class="anuncios" id="anuncios">
             <div class="bloco-texto" id="bloco-texto">
                 <p class="anuncio-texto">ESSE SITE ESTA EM CONSTRUÇÃO</p>
             </div><!--bloco-texto-->
         </div><!--anuncios-->
-    </div><!--mainbloco-->
+    </div><!--geral-->
 
     <script src="/index.js"></script>
 </body>

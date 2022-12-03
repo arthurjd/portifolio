@@ -43,7 +43,7 @@
 }
 
 .geralnav {
-    background-color: rgb(118, 118, 118);
+    background-color: rgb(128, 128, 128);
 }
 
 .navtopico {
@@ -125,7 +125,6 @@
     border-radius: 10px;
     margin: 20px auto;
     background: rgb(118, 118, 118);
-    ;
     color: white;
     border: 0;
     cursor: pointer;
@@ -199,8 +198,11 @@
         margin: 10px;
     }
 
-    #mainbloco {
-        max-width: max-content;
+    #geral {
+        margin: 0px;
+        padding: 2%;
+        float: left;
+        display: table-column;
     }
 
     #anuncios {
