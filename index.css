@@ -10,15 +10,6 @@
     background-color: gray;
 }
 
-.nav {
-    background-color: rgb(118, 118, 118);
-    display: flex;
-    align-items: center;
-    align-content: center;
-    float: left;
-    height: 70px;
-}
-
 .navitem {
     display: flex;
     justify-content: center;
@@ -34,6 +25,15 @@
     text-decoration: none;
 }
 
+.nav {
+    background-color: rgb(118, 118, 118);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    float: left;
+    height: 70px;
+}
+
 .nav2 {
     height: 70px;
     background-color: rgb(118, 118, 118);
@@ -42,6 +42,11 @@
     align-items: center;
     align-content: center;
     padding-left: 20px;
+}
+
+.navtopico {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #botaometamask {
