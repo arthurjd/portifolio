@@ -210,7 +210,7 @@
     #barranav {
         margin: 0px;
         width: 100%;
-        background-color: rgb(118, 118, 118);
+        background-color: 1e222d;
 
         float: left;
         display: table-row;
@@ -221,7 +221,7 @@
         width: 100%;
         height: 50px;
         padding: 0px;
-        background-color: rgb(118, 118, 118);
+        background-color: #1e222d;
 
         justify-content: center;
     }
@@ -229,7 +229,7 @@
     #nav2 {
         width: 100%;
         padding: 0px;
-        background-color: rgb(118, 118, 118);
+        background-color: #1e222d;
 
         justify-content: center;
     }
@@ -257,11 +257,11 @@
         margin-top: 2.5px;
         border-radius: 10px;
         margin-bottom: 2.5px;
-        background-color: rgb(118, 118, 118);
 
-        color: black;
         cursor: pointer;
+        color: #d1d4dc;
         text-decoration: none;
+        background-color: #1e222d;
     }
 
     #coluna1 {
