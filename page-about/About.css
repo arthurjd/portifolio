@@ -7,7 +7,7 @@
 }
 
 .cordefundo {
-    background-color: gray;
+    background-color: #434651;
 }
 
 .geral {
@@ -24,9 +24,10 @@
     margin: 10px;
     font-size: 20px;
     border-radius: 5px;
-    color: rgb(0, 0, 0);
 
     display: flex;
+    color: #1e222d;
+    color: #d1d4dc;
     width: fit-content;
     align-items: center;
     border-style: outset;
@@ -55,7 +56,7 @@
 }
 
 .geralnav {
-    background-color: rgb(118, 118, 118);
+    background-color: #1e222d;
 }
 
 .barranav {
@@ -69,14 +70,14 @@
     margin: 10px;
     font-size: 20px;
     border-radius: 5px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(118, 118, 118);
 
     display: flex;
     cursor: pointer;
-    border-style: solid;
+    color: #d1d4dc;
     align-items: center;
+    border-style: solid;
     justify-content: center;
+    background-color: #1e222d;
 }
 
 #enviarcripto {
@@ -86,28 +87,29 @@
     font-size: 20px;
     max-height: 70px;
     border-radius: 5px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(118, 118, 118);
-    
+
     display: flex;
     cursor: pointer;
+    color: #d1d4dc;
     align-items: center;
     border-style: solid;
-    justify-content: center; 
+    justify-content: center;
+    background-color: #1e222d;
 }
 
 .coluna1 {
     padding-right: 2%;
-    background-color: rgba(240, 248, 255, 0);
-
+    
     float: left;
+    background-color: #434651;
 }
 
 .coluna2 {
     border-radius: 10px;
-    background-color: rgb(118, 118, 118);
 
     float: left;
+    color: #d1d4dcb9;
+    background-color: #1e222d;
 }
 
 .botao {

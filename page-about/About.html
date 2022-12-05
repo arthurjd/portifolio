@@ -38,6 +38,47 @@
 				</div><!--nav2-->
 			</div><!--navtopico-->
 		</div><!--geralnav-->
+
+
+        <div class="tradingview-widget-container" id="precoscorrente">
+        	<div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+				{
+					"symbols": [
+						{
+						"description": "Ethereum",
+						"proName": "KRAKEN:ETHUSD"
+						},
+						{
+						"description": "Bitcoin",
+						"proName": "KRAKEN:BTCUSD"
+						},
+						{
+						"description": "XRP",
+						"proName": "KRAKEN:XRPUSD"
+						},
+						{
+						"description": "ChainLink",
+						"proName": "KRAKEN:LINKUSD"
+						},
+						{
+						"description": "Polkadot",
+						"proName": "KRAKEN:DOTUSD"
+						},
+						{
+						"description": "MATIC",
+						"proName": "KRAKEN:MATICUSD"
+						}
+					],
+					"showSymbolLogo": true,
+					"colorTheme": "dark",
+					"isTransparent": false,
+					"displayMode": "adaptive",
+					"locale": "br"
+				}
+            </script>
+        </div><!-- TradingView Widget END -->
 	</header>
 
 	<div class="geral" id="geral">

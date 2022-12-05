@@ -38,51 +38,48 @@
                 </div><!--nav2-->
             </div><!--navtopico-->
         </div><!--geralnav-->
+
+ 
+        <div class="tradingview-widget-container" id="precoscorrente">
+        	<div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+				{
+					"symbols": [
+						{
+						"description": "Ethereum",
+						"proName": "KRAKEN:ETHUSD"
+						},
+						{
+						"description": "Bitcoin",
+						"proName": "KRAKEN:BTCUSD"
+						},
+						{
+						"description": "XRP",
+						"proName": "KRAKEN:XRPUSD"
+						},
+						{
+						"description": "ChainLink",
+						"proName": "KRAKEN:LINKUSD"
+						},
+						{
+						"description": "Polkadot",
+						"proName": "KRAKEN:DOTUSD"
+						},
+						{
+						"description": "MATIC",
+						"proName": "KRAKEN:MATICUSD"
+						}
+					],
+					"showSymbolLogo": true,
+					"colorTheme": "dark",
+					"isTransparent": false,
+					"displayMode": "adaptive",
+					"locale": "br"
+				}
+            </script>
+        </div><!-- TradingView Widget END -->
     </header>
-
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/markets/" rel="noopener" target="_blank"></div>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-                {
-                "symbols": [
-                    {
-                    "description": "Ethereum",
-                    "proName": "KRAKEN:ETHUSD"
-                    },
-                    {
-                    "description": "Bitcoin",
-                    "proName": "KRAKEN:BTCUSD"
-                    },
-                    {
-                    "description": "XRP",
-                    "proName": "KRAKEN:XRPUSD"
-                    },
-                    {
-                    "description": "ChainLink",
-                    "proName": "KRAKEN:LINKUSD"
-                    },
-                    {
-                    "description": "Polkadot",
-                    "proName": "KRAKEN:DOTUSD"
-                    },
-                    {
-                    "description": "MATIC",
-                    "proName": "KRAKEN:MATICUSD"
-                    }
-                    ],
-                    "showSymbolLogo": true,
-                    "colorTheme": "light",
-                    "isTransparent": true,
-                    "displayMode": "adaptive",
-                    "locale": "br"
-                    }
-                </script>
-    </div>
-    <!-- TradingView Widget END -->
-
-    
 
     <div class="geral" id="geral">
         <div class="anuncios" id="anuncios">
@@ -90,42 +87,37 @@
                 <p class="anuncio-texto">ESSE SITE ESTA EM CONSTRUÇÃO</p>
             </div><!--bloco-texto-->
         </div><!--anuncios-->
-    </div><!--geral-->
 
+        <div class="tradingview-widget-container" id="btcrelevancia">
+            <div id="tradingview_a7662"></div>
+            <div class="tradingview-widget-copyright"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget(
+                    {
+                        "width": "100%",
+                        "max-width": "1100px",
+                        "symbol": "CRYPTOCAP:BTC.D",
+                        "timezone": "Etc/UTC",
+                        "theme": "light",
+                        "style": "2",
+                        "locale": "br",
+                        "toolbar_bg": "#f1f3f6",
+                        "enable_publishing": false,
+                        "range": "3M",
+                        "save_image": true,
+                        "container_id": "tradingview_a7662"
+                    }
+                );
+            </script>
+        </div>
 
-
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container">
-        <div id="tradingview_a7662"></div>
-        <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/BTC.D/?exchange=CRYPTOCAP" rel="noopener" target="_blank"><span class="blue-text">Gráfico BTC.D</span></a> por TradingView</div>
-        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-        <script type="text/javascript">
-            new TradingView.widget(
-                {
-                    "symbol": "CRYPTOCAP:BTC.D",
-                    "timezone": "Etc/UTC",
-                    "theme": "light",
-                    "style": "2",
-                    "locale": "br",
-                    "toolbar_bg": "#f1f3f6",
-                    "enable_publishing": false,
-                    "range": "3M",
-                    "save_image": false,
-                    "container_id": "tradingview_a7662"
-                }
-            );
-        </script>
-    </div>
-    <!-- TradingView Widget END -->
-
-
-
-    <div class="graficos2-1">
+        <div class="graficos2-1">
 
         <!-- TradingView Widget BEGIN BTC--> 
         <div class="tradingview-widget-container" id="buysell1">
             <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/BTCUSD/?exchange=KRAKEN" rel="noopener" target="_blank"></div>
+            <div class="tradingview-widget-copyright"></div>
             <script type="text/javascript"
                 src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
                     {
@@ -145,9 +137,9 @@
 
 
         <!-- TradingView Widget BEGIN ETH-->
-        <div class="tradingview-widget-container" id="buysell3">
+        <div class="tradingview-widget-container" id="buysell2">
             <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/BTCUSD/?exchange=KRAKEN" rel="noopener" target="_blank"></div>
+            <div class="tradingview-widget-copyright"></div>
             <script type="text/javascript"
                 src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
                     {
@@ -164,16 +156,13 @@
         </div>
         <!-- TradingView Widget END ETH-->
 
-    </div>
+        </div>
 
-
-
-
-    <div class="graficos2-2">
+        <div class="graficos2-2">
         <!-- TradingView Widget BEGIN MATIC-->
         <div class="tradingview-widget-container" id="buysell3">
             <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/BTCUSD/?exchange=KRAKEN" rel="noopener" target="_blank"></div>
+            <div class="tradingview-widget-copyright"></div>
             <script type="text/javascript"
                 src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
                     {
@@ -195,7 +184,7 @@
         <!-- TradingView Widget BEGIN LINK-->
         <div class="tradingview-widget-container" id="buysell4">
             <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/symbols/BTCUSD/?exchange=KRAKEN" rel="noopener" target="_blank"></div>
+            <div class="tradingview-widget-copyright"></div>
             <script type="text/javascript"
                 src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
                     {
@@ -211,9 +200,10 @@
             </script>
         </div>
         <!-- TradingView Widget END LINK-->
-    </div>
+        </div>
 
 
+    </div><!--geral-->
 
     <script src="/index.js"></script>
 </body>
