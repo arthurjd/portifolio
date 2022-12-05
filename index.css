@@ -121,6 +121,40 @@
     font-family: Garamond, serif;
 }
 
+.graficos2-1{
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.graficos2-2 {
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#buysell1 {
+    margin: 20px;
+    float: left;
+}
+
+#buysell2 {
+    margin: 20px;
+    float: left;
+}
+
+#buysell3 {
+    margin: 20px;
+    float: left;
+}
+
+#buysell4 {
+    margin: 20px;
+    float: left;
+}
+
 /*------------------------------FIM DO CSS DA PÁGINA TODA------------------------------*/
 
 
