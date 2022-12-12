@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='/page-pm/PrecoMedio.css'>
+    <title>Preço Médio</title>
+</head>
+<body class="cordefundo">
+    <header>
+        <div class="geralnav" id="geralnav">
+            <div class="popup-fundoescuro">
+                <div class="popup">
+                    <div class="popup-close">
+                        x
+                    </div><!--popup-close-->
+                    <div class="popup-conteudo">
+                        <p class="paragrafo">Ao clicar em enviar você enviará a moeda principal da rede que você esta
+                            conectado para <strong>minha carteira</strong>, atual dono desse site!</p>
+                        <p class="paragrafo">Digite abaixo o valor que deseja enviar!</p>
+                        <input id="value-eth" type="number">
+                        <button id="botao-send">Enviar</button>
+                    </div> <!--popup-conteudo-->
+                </div> <!--popup-->
+            </div> <!--popup-fundoescuro-->
+    
+            <div class="barranav" id="barranav">
+                <div class="nav1" id="nav1">
+                    <a class="navitem" href="/index.html">HOME</a>
+                    <a class="navitem" href="/page-about/About.html">ABOUT</a>
+                    <a class="navitem" href="/page-pm/PrecoMedio.html">PREÇO MÉDIO</a>
+                    <button class="navitem" id="enviarcripto">Enviar Cripto</button>
+                </div><!--nav-->
+                <div class="nav2" id="nav2">
+                    <button id="botaometamask">Conecte a sua Metamask</button>
+                </div><!--nav2-->
+            </div><!--navtopico-->
+        </div><!--geralnav-->
+    
+    
+        <div class="tradingview-widget-container" id="precoscorrente">
+        	<div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+				{
+					"symbols": [
+						{
+						"description": "Ethereum",
+						"proName": "KRAKEN:ETHUSD"
+						},
+						{
+						"description": "Bitcoin",
+						"proName": "KRAKEN:BTCUSD"
+						},
+						{
+						"description": "XRP",
+						"proName": "KRAKEN:XRPUSD"
+						},
+						{
+						"description": "ChainLink",
+						"proName": "KRAKEN:LINKUSD"
+						},
+						{
+						"description": "Polkadot",
+						"proName": "KRAKEN:DOTUSD"
+						},
+						{
+						"description": "MATIC",
+						"proName": "KRAKEN:MATICUSD"
+						}
+					],
+					"showSymbolLogo": true,
+					"colorTheme": "dark",
+					"isTransparent": false,
+					"displayMode": "adaptive",
+					"locale": "br"
+				}
+            </script>
+        </div><!-- TradingView Widget END -->
+    </header>
+
+    <div class="geral">
+        <div class="tudo">
+            <div class="conteudo">
+                <h1 class="titulo">Calculadora de Preço Médio</h1><br><br>
+                
+                <form class="formulario">
+                    <label class="textoform" for="valor-gasto">VALOR GASTO:</label>
+                    <input type="number" id="valor_gasto" name="valor-gasto"><br>
+
+                    <label class="textoform" for="quantidade-recebida">QUANTIDADE RECEBIDA:</label>
+                    <input type="number" id="quantidade" name="quantidade-recebida"><br>
+
+                    <label class="textoform" for="preco-moeda">PREÇO DA MOEDA:</label>
+                    <input type="number" id="moeda" name="preco-moeda"><br><br>
+                </form>
+                <button class="botao" onclick="calcularPrecoMedio()">ENVIAR</button><br><br>
+
+                
+                <p class="paragrafo"><strong>Esse é o preço médio da operação:</strong></p>
+                <div class="resultados" id="resultado"></div><br>
+                
+                <p class="paragrafo"><strong>Esse é o impacto que você sofrera no preço de mercado do token comparado ao preço que voce vai comprar:</strong></p>
+                <div class="resultados" id="impacto"></div><br>
+                <div class="erro" id="erro" ></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="/page-pm/PrecoMedio.js"></script>
+</body>
+</html>
