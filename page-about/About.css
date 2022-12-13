@@ -267,6 +267,7 @@
     
     #perfil {
         width: 100%;
+        margin-bottom: 5px;
     }
 
     #botao {
@@ -274,7 +275,7 @@
         font-size: 20px;
         margin-top: 2.5px;
         border-radius: 10px;
-        margin-bottom: 2.5px;
+        margin-bottom: 5px;
 
         cursor: pointer;
         color: #d1d4dc;
@@ -308,7 +309,7 @@
 
     .distancia{
         display: flex;
-        height: 100px;
+        height: 145px;
     }
 }
 /*------------------FIM DA RESPONSIVIDADE-------------------*/
