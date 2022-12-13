@@ -31,17 +31,23 @@
                 <div class="nav1" id="nav1">
                     <a class="navitem" href="index.html">HOME</a>
                     <a class="navitem" href="/page-about/About.html">ABOUT</a>
+                </div><!--nav1-->
+
+                <div class="navmeio" id="navmeio">
                     <a class="navitem" href="/page-pm/PrecoMedio.html">PREÇO MÉDIO</a>
-                    <button class="navitem" id="enviarcripto">Enviar Cripto</button>
-                </div><!--nav-->
+                    <button class="navitem" id="enviarcripto">ENVIAR CRIPTO</button>
+                </div><!--navmeio-->
+
                 <div class="nav2" id="nav2">
-                    <button id="botaometamask">Conecte a sua Metamask</button>
+                    <button id="botaometamask">CONECTE A METAMASK</button>
                 </div><!--nav2-->
-            </div><!--navtopico-->
+            </div><!--barranav-->
         </div><!--geralnav-->
 
- 
-        <div class="tradingview-widget-container" id="precoscorrente">
+    </header>
+
+    <div class="corpodetudo">
+        <div class="tradingview-widget-container">
         	<div class="tradingview-widget-container__widget"></div>
             <div class="tradingview-widget-copyright"></div>
             <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
@@ -80,42 +86,88 @@
 				}
             </script>
         </div><!-- TradingView Widget END -->
-    </header>
 
-    <div class="geral" id="geral">
-        <div class="anuncios" id="anuncios">
-            <div class="bloco-conteudo" id="bloco-conteudo">
-                <p class="anuncio-texto">ESSE SITE ESTA EM CONSTRUÇÃO</p>
-            </div><!--bloco-texto-->
-        </div><!--anuncios-->
+        <div class="distancia"></div>
 
-        <div class="tradingview-widget-container" id="btcrelevancia">
-            <div id="tradingview_a7662"></div>
-            <div class="tradingview-widget-copyright"></div>
-            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-            <script type="text/javascript">
-                new TradingView.widget(
-                    {
-                        "width": "100%",
-                        "max-width": "1100px",
-                        "symbol": "CRYPTOCAP:BTC.D",
-                        "timezone": "Etc/UTC",
-                        "theme": "light",
-                        "style": "2",
-                        "locale": "br",
-                        "toolbar_bg": "#f1f3f6",
-                        "enable_publishing": false,
-                        "range": "3M",
-                        "save_image": true,
-                        "container_id": "tradingview_a7662"
-                    }
-                );
-            </script>
-        </div>
+        <div class="geral" id="geral">
+            <div class="anuncios" id="anuncios">
+                <div class="bloco-conteudo" id="bloco-conteudo">
+                    <p class="anuncio-texto">ESSE SITE ESTA EM CONSTRUÇÃO</p>
+                </div><!--bloco-texto-->
+            </div><!--anuncios-->
 
-        <div class="graficos2-1">
-            <!-- TradingView Widget BEGIN BTC--> 
-            <div class="tradingview-widget-container" id="buysell1">
+            <div class="tradingview-widget-container" id="btcrelevancia">
+                <div id="tradingview_e231c"></div>
+                <div class="tradingview-widget-copyright"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                    new TradingView.widget(
+                        {
+                            "width": "100%",
+                            "max-width": "1100px",
+                            "symbol": "CRYPTOCAP:BTC.D",
+                            "timezone": "Etc/UTC",
+                            "theme": "dark",
+                            "style": "2",
+                            "locale": "br",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "range": "3M",
+                            "save_image": true,
+                            "container_id": "tradingview_a7662"
+                        }
+                    );
+                </script>
+            </div>
+
+            <div class="graficos2-1">
+                <!-- TradingView Widget BEGIN BTC--> 
+                <div class="tradingview-widget-container" id="buysell1">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                                "interval": "1M",
+                                "width": "450",
+                                "isTransparent": false,
+                                "height": "450",
+                                "symbol": "KRAKEN:BTCUSD",
+                                "showIntervalTabs": true,
+                                "locale": "br",
+                                "colorTheme": "dark"
+                            }
+                    </script>
+                </div>
+                <!-- TradingView Widget END BTC-->
+
+
+
+                <!-- TradingView Widget BEGIN ETH-->
+                <div class="tradingview-widget-container" id="buysell2">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"></div>
+                    <script type="text/javascript"
+                        src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                            {
+                                "interval": "1M",
+                                "width": "450",
+                                "isTransparent": false,
+                                "height": "450",
+                                "symbol": "KRAKEN:ETHUSD",
+                                "showIntervalTabs": true,
+                                "locale": "br",
+                                "colorTheme": "dark"
+                            }
+                    </script>
+                </div>
+                <!-- TradingView Widget END ETH-->
+
+            </div><!--graficos2-1-->
+
+            <div class="graficos2-2">
+            <!-- TradingView Widget BEGIN MATIC-->
+            <div class="tradingview-widget-container" id="buysell3">
                 <div class="tradingview-widget-container__widget"></div>
                 <div class="tradingview-widget-copyright"></div>
                 <script type="text/javascript"
@@ -125,19 +177,19 @@
                             "width": "450",
                             "isTransparent": false,
                             "height": "450",
-                            "symbol": "KRAKEN:BTCUSD",
+                            "symbol": "KRAKEN:MATICUSD",
                             "showIntervalTabs": true,
                             "locale": "br",
-                            "colorTheme": "light"
+                            "colorTheme": "dark"
                         }
                 </script>
             </div>
-            <!-- TradingView Widget END BTC-->
+            <!-- TradingView Widget END MATIC-->
 
 
 
-            <!-- TradingView Widget BEGIN ETH-->
-            <div class="tradingview-widget-container" id="buysell2">
+            <!-- TradingView Widget BEGIN LINK-->
+            <div class="tradingview-widget-container" id="buysell4">
                 <div class="tradingview-widget-container__widget"></div>
                 <div class="tradingview-widget-copyright"></div>
                 <script type="text/javascript"
@@ -147,200 +199,18 @@
                             "width": "450",
                             "isTransparent": false,
                             "height": "450",
-                            "symbol": "KRAKEN:ETHUSD",
+                            "symbol": "KRAKEN:LINKUSD",
                             "showIntervalTabs": true,
                             "locale": "br",
-                            "colorTheme": "light"
+                            "colorTheme": "dark"
                         }
                 </script>
             </div>
-            <!-- TradingView Widget END ETH-->
+            <!-- TradingView Widget END LINK-->
+            </div>
 
-        </div><!--graficos2-1-->
-
-        <div class="graficos2-2">
-        <!-- TradingView Widget BEGIN MATIC-->
-        <div class="tradingview-widget-container" id="buysell3">
-            <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"></div>
-            <script type="text/javascript"
-                src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-                    {
-                        "interval": "1M",
-                        "width": "450",
-                        "isTransparent": false,
-                        "height": "450",
-                        "symbol": "KRAKEN:MATICUSD",
-                        "showIntervalTabs": true,
-                        "locale": "br",
-                        "colorTheme": "light"
-                    }
-            </script>
-        </div>
-        <!-- TradingView Widget END MATIC-->
-
-
-
-        <!-- TradingView Widget BEGIN LINK-->
-        <div class="tradingview-widget-container" id="buysell4">
-            <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"></div>
-            <script type="text/javascript"
-                src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-                    {
-                        "interval": "1M",
-                        "width": "450",
-                        "isTransparent": false,
-                        "height": "450",
-                        "symbol": "KRAKEN:LINKUSD",
-                        "showIntervalTabs": true,
-                        "locale": "br",
-                        "colorTheme": "light"
-                    }
-            </script>
-        </div>
-        <!-- TradingView Widget END LINK-->
-        </div>
-
-        <div class="gradegrafico">
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/cryptocurrencies/" rel="noopener" target="_blank"><span class="blue-text">Bitcoin and Altcoin Prices</span></a> by TradingView</div>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
-                    {
-                    "title": "Cryptocurrencies",
-                    "title_raw": "Cryptocurrencies",
-                    "title_link": "/markets/cryptocurrencies/prices-all/",
-                    "width": 770,
-                    "height": 450,
-                    "locale": "en",
-                    "showSymbolLogo": true,
-                    "symbolsGroups": [
-                        {
-                        "name": "Overview",
-                        "symbols": [
-                            {
-                            "name": "CRYPTOCAP:TOTAL"
-                            },
-                            {
-                            "name": "BITSTAMP:BTCUSD"
-                            },
-                            {
-                            "name": "BITSTAMP:ETHUSD"
-                            },
-                            {
-                            "name": "FTX:SOLUSD"
-                            },
-                            {
-                            "name": "BINANCE:AVAXUSD"
-                            },
-                            {
-                            "name": "COINBASE:UNIUSD"
-                            }
-                        ]
-                        },
-                        {
-                        "name": "Bitcoin",
-                        "symbols": [
-                            {
-                            "name": "BITSTAMP:BTCUSD"
-                            },
-                            {
-                            "name": "COINBASE:BTCEUR"
-                            },
-                            {
-                            "name": "COINBASE:BTCGBP"
-                            },
-                            {
-                            "name": "BITFLYER:BTCJPY"
-                            },
-                            {
-                            "name": "CEXIO:BTCRUB"
-                            },
-                            {
-                            "name": "CME:BTC1!"
-                            }
-                        ]
-                        },
-                        {
-                        "name": "Ethereum",
-                        "symbols": [
-                            {
-                            "name": "BITSTAMP:ETHUSD"
-                            },
-                            {
-                            "name": "KRAKEN:ETHEUR"
-                            },
-                            {
-                            "name": "COINBASE:ETHGBP"
-                            },
-                            {
-                            "name": "BITFLYER:ETHJPY"
-                            },
-                            {
-                            "name": "BINANCE:ETHBTC"
-                            },
-                            {
-                            "name": "BINANCE:ETHUSDT"
-                            }
-                        ]
-                        },
-                        {
-                        "name": "Solana",
-                        "symbols": [
-                            {
-                            "name": "FTX:SOLUSD"
-                            },
-                            {
-                            "name": "BINANCE:SOLEUR"
-                            },
-                            {
-                            "name": "COINBASE:SOLGBP"
-                            },
-                            {
-                            "name": "BINANCE:SOLBTC"
-                            },
-                            {
-                            "name": "HUOBI:SOLETH"
-                            },
-                            {
-                            "name": "BINANCE:SOLUSDT"
-                            }
-                        ]
-                        },
-                        {
-                        "name": "Uniswap",
-                        "symbols": [
-                            {
-                            "name": "COINBASE:UNIUSD"
-                            },
-                            {
-                            "name": "KRAKEN:UNIEUR"
-                            },
-                            {
-                            "name": "COINBASE:UNIGBP"
-                            },
-                            {
-                            "name": "BINANCE:UNIBTC"
-                            },
-                            {
-                            "name": "KRAKEN:UNIETH"
-                            },
-                            {
-                            "name": "BINANCE:UNIUSDT"
-                            }
-                        ]
-                        }
-                    ],
-                    "colorTheme": "light"
-                    }
-            </script>
-            </div><!-- TradingView Widget END -->
-
-        </div><!--gradegrafico-->
-
-    </div><!--geral-->
+        </div><!--geral-->
+    </div><!--corpodetudo-->
 
     <script src="/index.js"></script>
 </body>

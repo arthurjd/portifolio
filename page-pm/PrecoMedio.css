@@ -47,9 +47,18 @@
     align-content: center;
 }
 
+.navmeio {
+    height: 70px;
+
+    float: left;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 .nav2 {
     height: 70px;
-    padding-left: 20px;
 
     display: flex;
     align-items: center;
@@ -111,7 +120,11 @@
     min-width: 280px;
     background-color: #1e222d;
     border-radius: 5px;
-    width: 40%;
+    width: 70%;
+}
+
+.distancia {
+    display: none;
 }
 
 .titulo {
@@ -121,26 +134,27 @@
 }
 
 input[type="number"] {
+    display: flex;
+    float: right;
     color: #d1d4dc;
+    font-weight: bold;
+    font-size: 15px;
     background-color: #272d3b;
     text-align: center;
-    height: 30px;
-    width: 80px;
-    float: left;
+    height: 25px;
+    width: 50%;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
     align-content: center;
-    
 }
 
 .textoform {
     color: #d1d4dc;
     font-size: 20px;
     font-weight: bold;
-    display: flex;
 }
 
 .botao {
@@ -179,7 +193,7 @@ input[type="number"] {
     margin: 20px auto;
     padding: 6px 10px;
     border-radius: 10px;
-    background: rgb(118, 118, 118);
+    background: #1e222d;
 
     display: block;
     color: white;
@@ -233,7 +247,6 @@ input[type="number"] {
     #barranav {
         margin: 0px;
         width: 100%;
-        background-color: rgb(118, 118, 118);
 
         float: left;
         display: table-row;
@@ -244,16 +257,21 @@ input[type="number"] {
         margin: 0px;
         height: 50px;
         padding: 0px;
-        background-color: rgb(118, 118, 118);
+        background-color: #1e222d;
 
         justify-content: center;
     }
+    
+    #navmeio {
+        width: 100%;
+        height: 50px;
+        background-color: #1e222d;
+    }
 
     #nav2 {
+        height: auto;
         width: 100%;
-        padding: 0px;
-        background-color: rgb(118, 118, 118);
-
+        background-color: #1e222d;
         justify-content: center;
     }
 
@@ -275,6 +293,31 @@ input[type="number"] {
         display: table-column;
     } NÃO VOU USAR ATÉ SER NECESSÁRIO DIVIDIR A PAGINA EM COLUNAS
 */
+
+    #distancia{
+        display: flex;
+        height: 115px;
+    }
+
+    #tudo {
+        width: 80%;
+    }
+
+    input[type="number"] {
+        display: flex;
+        color: #d1d4dc;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: #272d3b;
+        text-align: center;
+        height: 25px;
+        width: 100%;
+    }
+
+    #linha {
+        margin-bottom: 20px;
+    }
+
 }
 
 /*------------------FIM DA RESPONSIVIDADE-------------------*/

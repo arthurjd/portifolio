@@ -42,18 +42,25 @@
     display: flex;
     align-items: center;
     align-content: center;
-    background-color: #1e222d;
+}
+
+.navmeio {
+    height: 70px;
+
+    float: left;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .nav2 {
     height: 70px;
-    padding-left: 20px;
 
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: right;
-    background-color: #1e222d;
 }
 
 .geralnav {
@@ -120,7 +127,7 @@
     margin-top: 2.5px;
     border-radius: 10px;
     margin-bottom: 2.5px;
-    background-color: rgb(118, 118, 118);
+    background-color: #1e222d;
 
     cursor: pointer;
 }
@@ -145,6 +152,10 @@
     font-family: Garamond, serif;
 }
 
+.distancia {
+    display: none;
+}
+
 /*------------------------------FIM DO CSS DA PÁGINA TODA------------------------------*/
 
 
@@ -157,7 +168,7 @@
     margin: 20px auto;
     padding: 6px 10px;
     border-radius: 10px;
-    background: rgb(118, 118, 118);
+    background: #1e222d;
 
     display: block;
     color: white;
@@ -211,7 +222,7 @@
     #barranav {
         margin: 0px;
         width: 100%;
-        background-color: 1e222d;
+        background-color: #1e222d;
 
         float: left;
         display: table-row;
@@ -225,6 +236,12 @@
         background-color: #1e222d;
 
         justify-content: center;
+    }
+
+    #navmeio {
+        width: 100%;
+        height: 50px;
+        background-color: #1e222d;
     }
     
     #nav2 {
@@ -278,6 +295,20 @@
     #navitem {
         margin: 5px;
         padding: 5px;
+    }
+
+    #bloco-conteudo {
+        padding: 20px;
+        font-size: 40px;
+        border-radius: 10px;
+
+        color: white;
+        background-color: red;
+    }
+
+    .distancia{
+        display: flex;
+        height: 100px;
     }
 }
 /*------------------FIM DA RESPONSIVIDADE-------------------*/

@@ -42,9 +42,18 @@
     align-content: center;
 }
 
+.navmeio {
+    height: 70px;
+
+    float: left;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 .nav2 {
     height: 70px;
-    padding-left: 20px;
 
     display: flex;
     align-items: center;
@@ -122,7 +131,9 @@
 }
 
 
-
+.distancia{
+    display: none;
+}
 
 
 #btcrelevancia {
@@ -163,6 +174,7 @@
     float: left;
 }
 
+
 /*------------------------------FIM DO CSS DA PÁGINA TODA------------------------------*/
 
 
@@ -175,7 +187,7 @@
     margin: 20px auto;
     padding: 6px 10px;
     border-radius: 10px;
-    background: rgb(118, 118, 118);
+    background: #1e222d;
 
     display: block;
     color: white;
@@ -226,10 +238,13 @@
 /*------------------RESPONSIVIDADE-------------------*/
 
 @media screen and (max-width: 860px) {
+    .geral {
+        margin-top: 30px;
+    }
+
     #barranav {
         margin: 0px;
         width: 100%;
-        background-color: rgb(118, 118, 118);
 
         float: left;
         display: table-row;
@@ -240,16 +255,21 @@
         margin: 0px;
         height: 50px;
         padding: 0px;
-        background-color: rgb(118, 118, 118);
+        background-color: #1e222d;
 
         justify-content: center;
     }
     
-    #nav2 {
+    #navmeio {
         width: 100%;
-        padding: 0px;
-        background-color: rgb(118, 118, 118);
+        height: 50px;
+        background-color: #1e222d;
+    }
 
+    #nav2 {
+        height: auto;
+        width: 100%;
+        background-color: #1e222d;
         justify-content: center;
     }
 
@@ -282,6 +302,11 @@
 
         color: white;
         background-color: red;
+    }
+
+    .distancia{
+        display: flex;
+        height: 115px;
     }
 }
 
