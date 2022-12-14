@@ -18,6 +18,27 @@
     justify-content: center;
 }
 
+.geralnav {
+    background-color: #1e222d;
+}
+
+.barranav {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.lista {
+    border: 0px;
+    font-size: 20px;
+
+    display: flex;
+    color: #d1d4dc;
+    border-style: outset;
+    list-style-type: none;
+    background-color: #1e222d;
+    justify-content: space-evenly;
+}
+
 .navitem {
     border: 1px;
     padding: 5px;
@@ -26,50 +47,36 @@
     border-radius: 5px;
 
     display: flex;
+    cursor: pointer;
     color: #d1d4dc;
-    width: fit-content;
     align-items: center;
-    border-style: outset;
+    border-style: solid;
+    justify-content: center;
+    background-color: #1e222d;
+}
+
+.navitemmax {
+    border: 1px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    max-width: 300px;
+    
+
+    display: flex;
+    cursor: pointer;
+    color: #d1d4dc;
+    align-items: center;
+    border-style: solid;
+    justify-content: center;
+    background-color: #1e222d;
+}
+
+.link {
     text-decoration: none;
-    justify-content: center;
-    background-color: #1e222d;
-}
-
-.nav1 {
-    height: 70px;
-
-    float: left;
-    display: flex;
-    align-items: center;
-    align-content: center;
-}
-
-.navmeio {
-    height: 70px;
-
-    float: left;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.nav2 {
-    height: 70px;
-
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: right;
-}
-
-.geralnav {
-    background-color: #1e222d;
-}
-
-.barranav {
-    margin-left: 30px;
-    margin-right: 30px;
+    color: #d1d4dc;
 }
 
 #botaometamask {
@@ -127,7 +134,9 @@
     margin-top: 2.5px;
     border-radius: 10px;
     margin-bottom: 2.5px;
-    background-color: #1e222d;
+
+    color: #d1d4dc;
+    background-color: #434651;
 
     cursor: pointer;
 }
@@ -310,6 +319,10 @@
     .distancia{
         display: flex;
         height: 145px;
+    }
+
+    #navitemmax {
+        max-width: 100px;
     }
 }
 /*------------------FIM DA RESPONSIVIDADE-------------------*/

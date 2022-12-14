@@ -29,21 +29,16 @@
             </div> <!--popup-fundoescuro-->
     
             <div class="barranav" id="barranav">
-                <div class="nav1" id="nav1">
-                    <a class="navitem" href="/index.html">HOME</a>
-                    <a class="navitem" href="/page-about/About.html">ABOUT</a>
-                </div><!--nav1-->
-    
-                <div class="navmeio" id="navmeio">
-                    <a class="navitem" href="/page-pm/PrecoMedio.html">PREÇO MÉDIO</a>
-                    <button class="navitem" id="enviarcripto">ENVIAR CRIPTO</button>
-                </div><!--navmeio-->
-    
-                <div class="nav2" id="nav2">
-                    <button id="botaometamask">CONECTE A METAMASK</button>
-                </div><!--nav2-->
-            </div><!--barranav-->
-        </div><!--geralnav-->
+                <ul class="lista">
+                    <li class="navitemmax" id="navitemmax"> <a class="link" href="/index.html">HOME</a>
+                    <li class="navitemmax" id="navitemmax"> <a class="link" href="/page-about/About.html">SOBRE</a>
+                    <li class="navitemmax" id="navitemmax"> <a class="link" href="/page-pm/PrecoMedio.html">PREÇO MÉDIO</a>
+                </ul>
+                <ul class="lista">
+                    <li class="navitem" id="enviarcripto">ENVIAR CRIPTO</li>
+                    <li class="navitem" id="botaometamask">CONECTE A METAMASK</li>
+                </ul>
+            </div><!--geralnav-->
     
     </header>
 
@@ -112,10 +107,10 @@
                     <button class="botao" onclick="calcularPrecoMedio()">ENVIAR</button><br><br>
 
                     
-                    <p class="paragrafo"><strong>Esse é o preço médio da operação:</strong></p>
+                    <p class="textoresposta"><strong>Esse é o preço médio da operação:</strong></p>
                     <div class="resultados" id="resultado"></div><br>
                     
-                    <p class="paragrafo"><strong>Esse é o impacto que você sofrera no preço de mercado do token comparado ao preço que voce vai comprar:</strong></p>
+                    <p class="textoresposta"><strong>Esse é o impacto que você sofrera no preço de mercado do token comparado ao preço que voce vai comprar:</strong></p>
                     <div class="resultados" id="impacto"></div><br>
                     <div class="erro" id="erro" ></div>
                 </div>

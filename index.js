@@ -28,9 +28,12 @@ document.getElementById('botaometamask').addEventListener('click', event => {
 
 const popupAparecerBotao = document.querySelector('#enviarcripto')
 const popup = document.querySelector('.popup-fundoescuro')
+const graficobtc = document.getElementById("btcrelevancia")
+
 
 popupAparecerBotao.addEventListener('click', () => {
     popup.style.display = 'block'
+    graficobtc.style.display = 'none'
 });
 
 popup.addEventListener('click', event => {
@@ -40,6 +43,7 @@ popup.addEventListener('click', event => {
 
     if (deveFecharPopup) {
         popup.style.display = 'none'
+        graficobtc.style.display = 'flex'
     }
 });
 
