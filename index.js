@@ -3,10 +3,11 @@
 document.getElementById('botaometamask').addEventListener('click', event => {
     let account;
     let button = event.target;
+
     ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
         account = accounts[0];
         console.log(account);
-        button.textContent = account;
+        button.textContent = 'CONECTADO';
 
         ethereum.request({ method: 'eth_getBalance', params: [account, 'latest'] }).then(result => {
 
