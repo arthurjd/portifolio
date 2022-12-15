@@ -115,8 +115,11 @@
                     );
                 </script>
             </div>
-            <div class="blocografico">
-                <div class="graficos">
+
+
+
+            <div class="blocografico" id="blocografico">
+                <div class="grafico1" id="grafico1">
                     <!-- TradingView Widget BEGIN BTC--> 
                     <div class="tradingview-widget-container" id="buysell">
                         <div class="tradingview-widget-container__widget"></div>
@@ -125,9 +128,9 @@
                             src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
                                 {
                                     "interval": "1M",
-                                    "width": "450",
+                                    "width": "100%",
                                     "isTransparent": false,
-                                    "height": "450",
+                                    "height": "100%",
                                     "symbol": "KRAKEN:BTCUSD",
                                     "showIntervalTabs": true,
                                     "locale": "br",
@@ -138,7 +141,6 @@
                     <!-- TradingView Widget END BTC-->
 
 
-
                     <!-- TradingView Widget BEGIN ETH-->
                     <div class="tradingview-widget-container" id="buysell">
                         <div class="tradingview-widget-container__widget"></div>
@@ -147,9 +149,9 @@
                             src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
                                 {
                                     "interval": "1M",
-                                    "width": "450",
+                                    "width": "100%",
                                     "isTransparent": false,
-                                    "height": "450",
+                                    "height": "100%",
                                     "symbol": "KRAKEN:ETHUSD",
                                     "showIntervalTabs": true,
                                     "locale": "br",
@@ -158,10 +160,12 @@
                         </script>
                     </div>
                     <!-- TradingView Widget END ETH-->
+                </div><!--graficos-->
 
 
 
-                    <!-- TradingView Widget BEGIN MATIC-->
+                <div class="grafico2" id="grafico2">
+                     <!-- TradingView Widget BEGIN MATIC-->
                     <div class="tradingview-widget-container" id="buysell">
                         <div class="tradingview-widget-container__widget"></div>
                         <div class="tradingview-widget-copyright"></div>
@@ -169,9 +173,9 @@
                             src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
                                 {
                                     "interval": "1M",
-                                    "width": "450",
+                                    "width": "100%",
                                     "isTransparent": false,
-                                    "height": "450",
+                                    "height": "100%",
                                     "symbol": "KRAKEN:MATICUSD",
                                     "showIntervalTabs": true,
                                     "locale": "br",
@@ -182,7 +186,6 @@
                     <!-- TradingView Widget END MATIC-->
 
 
-
                     <!-- TradingView Widget BEGIN LINK-->
                     <div class="tradingview-widget-container" id="buysell">
                         <div class="tradingview-widget-container__widget"></div>
@@ -191,9 +194,9 @@
                             src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
                                 {
                                     "interval": "1M",
-                                    "width": "450",
+                                    "width": "100%",
                                     "isTransparent": false,
-                                    "height": "450",
+                                    "height": "100%",
                                     "symbol": "KRAKEN:LINKUSD",
                                     "showIntervalTabs": true,
                                     "locale": "br",
@@ -202,9 +205,8 @@
                         </script>
                     </div>
                     <!-- TradingView Widget END LINK-->
-
-                </div><!--graficos-->
-            </div>
+                </div><!--grafico2-->
+            </div><!--blocografico-->
         </div><!--geral-->
     </div><!--corpodetudo-->
 

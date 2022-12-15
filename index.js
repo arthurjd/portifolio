@@ -7,7 +7,7 @@ document.getElementById('botaometamask').addEventListener('click', event => {
     ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
         account = accounts[0];
         console.log(account);
-        button.textContent = 'CONECTADO';
+        button.textContent = 'Conectado';
 
         ethereum.request({ method: 'eth_getBalance', params: [account, 'latest'] }).then(result => {
 
